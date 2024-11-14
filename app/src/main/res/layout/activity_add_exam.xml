@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/asset"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/titleAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="20dp"
+        android:text="Ajouter Examen"
+        android:textAlignment="center"
+        android:textColor="#FFC300"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/type_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type de l'examen" />
+
+    <EditText
+        android:id="@+id/semestre_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Semestre" />
+
+    <EditText
+        android:id="@+id/matiere_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Matière" />
+
+    <EditText
+        android:id="@+id/date_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date (dd/mm/yyyy)" />
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:backgroundTint="@color/rose"
+        android:text="Ajouter Examen" />
+</LinearLayout>
