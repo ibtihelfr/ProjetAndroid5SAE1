@@ -1,9 +1,12 @@
 <resources>
     <string name="app_name">School</string>
+<<<<<<< HEAD
     <string-array name="event_types">
         <item>Événements académiques</item>
         <item>Événements culturels</item>
         <item>Événements sportifs</item>
         <item>Réunion parent</item>
     </string-array>
+=======
+>>>>>>> 7c819f0 (crud classe)
 </resources>

@@ -23,7 +23,10 @@ public interface EvenementDAO {
     @Query("SELECT * FROM evenement WHERE idEvent = :id")
     Evenement getEvenementById(int id);
 
+<<<<<<< HEAD
     @Query("SELECT * FROM evenement WHERE description LIKE '%' || :name || '%'")
     List<Evenement> searchEvenementByName(String name);
 
+=======
+>>>>>>> 7c819f0 (crud classe)
 }

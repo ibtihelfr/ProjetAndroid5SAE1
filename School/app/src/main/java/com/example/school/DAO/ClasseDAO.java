@@ -23,4 +23,10 @@ public interface ClasseDAO {
     @Query("SELECT * FROM classe WHERE idClass = :id")
     Classe getClasseById(int id);
 
+<<<<<<< HEAD
+=======
+    @Query("SELECT * FROM classe WHERE niveau LIKE '%' || :niveau || '%'")
+    List<Classe> searchClassesByNiveau(String niveau);
+
+>>>>>>> 7c819f0 (crud classe)
 }

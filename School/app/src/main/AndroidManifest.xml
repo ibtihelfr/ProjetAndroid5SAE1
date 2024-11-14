@@ -13,6 +13,7 @@
         android:theme="@style/Theme.School"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
             android:name=".evenement.Event"
             android:exported="false" />
         <activity
@@ -21,6 +22,14 @@
         <activity
             android:name=".evenement.FormulaireEvent"
             android:exported="false" />
+=======
+            android:name=".Classe.AddEditClasse"
+            android:exported="false" />
+        <activity
+            android:name=".Classe.ListeClasse"
+            android:exported="false" />
+        <activity android:name=".AddEditClasseActivity" />
+>>>>>>> 7c819f0 (crud classe)
         <activity
             android:name=".HomeProfessor.HomeProfessor"
             android:exported="false" />

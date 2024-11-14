@@ -3,6 +3,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+<<<<<<< HEAD
+=======
+    android:background="@drawable/asset"
+>>>>>>> 7c819f0 (crud classe)
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -11,7 +15,11 @@
         android:id="@+id/addEventFormButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:text="Open Event Form"
+=======
+        android:text="Ajouter une Classe"
+>>>>>>> 7c819f0 (crud classe)
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,11 +30,19 @@
         android:id="@+id/listEventFormButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:text="List Event Form"
+=======
+        android:text="Liste Des Classes"
+>>>>>>> 7c819f0 (crud classe)
         app:layout_constraintTop_toBottomOf="@id/addEventFormButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"
+<<<<<<< HEAD
         android:onClick="move"/>
+=======
+        android:onClick="list"/>
+>>>>>>> 7c819f0 (crud classe)
 
 </androidx.constraintlayout.widget.ConstraintLayout>

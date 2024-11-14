@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/asset"
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/titleAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="20dp"
+        android:text="Ajouter une classe"
+        android:textAlignment="center"
+        android:textColor="#FFC300"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <!-- Champ pour le niveau de la classe -->
+    <EditText
+        android:id="@+id/niveau_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Niveau" />
+
+    <!-- Champ pour le nom de la classe -->
+    <EditText
+        android:id="@+id/class_name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nom de la classe" />
+
+    <!-- Champ pour l'emploi (emploi du temps) de la classe -->
+    <EditText
+        android:id="@+id/emploi_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Emploi du temps" />
+
+    <!-- Bouton pour ajouter la classe -->
+    <Button
+        android:id="@+id/add_class_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enregistrer la classe"
+        android:backgroundTint="@color/rose" />
+
+</LinearLayout>

@@ -3,6 +3,7 @@ package com.example.school;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+<<<<<<< HEAD
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,13 +15,31 @@ import com.example.school.DAO.UserDAO;
 import com.example.school.database.database;
 import com.example.school.evenement.FormulaireEvent;
 import com.example.school.evenement.listEvent;
+=======
+import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.school.Classe.AddEditClasse;
+import com.example.school.Classe.ListeClasse;
+import com.example.school.ClasseAdapter.ClasseAdapter;
+import com.example.school.DAO.ClasseDAO;
+import com.example.school.DAO.UserDAO;
+import com.example.school.database.database;
+import com.example.school.models.Classe;
+>>>>>>> 7c819f0 (crud classe)
 import com.example.school.models.User;
 
 public class MainActivity extends AppCompatActivity {
     private database db;
     private UserDAO userDAO;
+<<<<<<< HEAD
     public static final int REQUEST_CODE_ADD_EDIT = 1;
 
+=======
+    private ClasseDAO classeDAO;
+    private ClasseAdapter ClasseAdapter;
+    public static final int REQUEST_CODE_ADD_EDIT = 1;
+>>>>>>> 7c819f0 (crud classe)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         db = database.getInstance(this);
+<<<<<<< HEAD
         userDAO = db.userDAO();
 
 //        insertSampleData();
@@ -58,3 +78,31 @@ public class MainActivity extends AppCompatActivity {
     }
 
 }
+=======
+      //  userDAO = db.userDAO();
+        classeDAO=db.classeDAO();
+//        insertSampleData();
+
+
+    }
+    private void insertSampleData() {
+        new Thread(() -> {
+            Classe user = new Classe();
+            user.setNiveau("Sample User"); // Set any necessary fields
+            user.setClassName("sample@example.com");
+            classeDAO.createClasse(user);
+        }).start();
+    }
+
+
+    public void add(View view) {
+        Intent intent = new Intent(this, AddEditClasse.class);
+        startActivityForResult(intent, REQUEST_CODE_ADD_EDIT);
+    }
+    public void list(View view) {
+        Intent intent = new Intent(this, ListeClasse.class);
+        startActivityForResult(intent, REQUEST_CODE_ADD_EDIT);
+    }
+
+}
+>>>>>>> 7c819f0 (crud classe)
