@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">School</string>
+    <string-array name="event_types">
+        <item>Événements académiques</item>
+        <item>Événements culturels</item>
+        <item>Événements sportifs</item>
+        <item>Réunion parent</item>
+    </string-array>
+</resources>

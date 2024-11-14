@@ -1,0 +1,59 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/asset"
+    >
+
+    <!-- Event title -->
+    <TextView
+        android:id="@+id/eventTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Evènement"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold" />
+
+    <!-- Calendar View -->
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/eventTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/rose"
+        android:dateTextAppearance="?android:attr/textAppearanceSmall"
+        android:weekDayTextAppearance="?android:attr/textAppearanceSmall"
+        android:backgroundTint="@color/rose" />
+
+    <!-- Participate button -->
+    <Button
+        android:id="@+id/participateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="participer"
+        android:backgroundTint="@color/rose"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/calendarView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-condensed" />
+
+    <!-- Participation sent message -->
+    <TextView
+        android:id="@+id/participationSentMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="participation envoyée .."
+        android:textColor="@android:color/white"
+        android:layout_below="@id/participateButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:fontFamily="sans-serif-condensed" />
+</RelativeLayout>
